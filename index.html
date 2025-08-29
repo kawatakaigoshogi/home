@@ -38,7 +38,116 @@
     </style>
 </head>
 <body>
-    <h1>川越高校囲碁将棋部のホームページですが、ただいま編集中...</h1>
-    <p>ここに部活動紹介などの内容を追加できます。</p>
+        <header>
+        <button id="open-button">編集する</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close-button">&times;</span>
+                <div class="password">
+                    <h2>パスワードを入力してください</h2>
+                    <div class="password-group">
+                        <input type="password" id="password-input" placeholder="パスワードを入力">
+                        <button id="submit-button">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="myModal2" class="modal2">
+            <div class="modal-content2">
+                <span class="close-button2">&times;</span>
+                <div class="select">
+                    <button id="edit-button">編集する</button>
+                    <button id="delete-button">削除する</button>
+                </div>
+            </div>
+        </div>
+        <div id="myModal3" class="modal3">
+            <div class="modal-content3">
+                <span class="close-button3">&times;</span>
+                <div class="select2">
+                    <button id="news-button">活動報告</button>
+                    <button id="tume-button">詰将棋</button>
+                </div>
+            </div>
+        </div>
+        <div id="myModal4" class="modal4">
+            <div class="modal-content4">
+                <span class="close-button4">&times;</span>
+                <div class="text-container">
+                    <h1>タイトルを入力</h1>
+                    <input type="text" placeholder="タイトルを入力">
+                    <h1>本文を入力</h1>
+                    <input type="text" placeholder="本文を入力">
+                    <h1>画像の名前を入力</h1>
+                    <input type="text" placeholder="画像の名前.png">
+                </div>
+            </div>
+        </div>
+        <img class="header" src="../image/ヘッダー.png" alt="ヘッダー">
+        <a href="../html/index.html" class="back-to-the-top">
+            <div class="logo-container">
+                <img class="logo" src="../image/syogi-logo.png" alt="埼玉県立川越高等学校囲碁将棋部 ロゴ">
+            </div>
+        </a>
+        <nav class="menu-container">
+            <ul class="menu-bar">
+                <li><a href="../html/index.html" class="index-html">ホーム</a></li>
+                <li><a href="../html/news.html">活動報告</a></li>
+                <li><a href="../html/tume-syogi.html">創作詰将棋</a></li>
+                <li><a href="../html/about-club.html">部について</a></li>
+                <li><a href="../html/contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-text">
+        <div class="sub-text">
+            <div class="carousel">
+                <button class="prev-button">◀</button>
+                <div class="carousel-container">
+                    <div class="carousel-slide">
+                        <a href="news/ホームページを解説しました.html"><img src="../image/ホームページ開設!!.png" alt="ホームページ開設!!"></a>
+                        <a href="../html/about-club.html"><img src="../image/部活紹介.png" alt="部活紹介"></a>
+                        <a href="../html/tume-syogi.html"><img src="../image/創作詰将棋投稿中….png" alt="創作詰将棋投稿中…"></a>
+                    </div>
+                </div>
+                <button class="next-button">▶</button>
+            </div>
+        </div>
+        <div class="sub-text2">
+            <h1>こちらは埼玉県立川越高等学校囲碁将棋部のホームページです。</h1>
+            <h3>大会などの活動報告、創作の詰将棋などを投稿しております。</h3>
+            <h3>「お問い合わせ」からメールでご質問できますので、ご利用ください。</h3>
+        </div>
+        <div class="sub-text3">
+            <div class="news-container">
+                <img src="../image/news.png" alt="ニュース ロゴ">
+            </div>
+            <div class="news-1">
+                <a href="../html/news/ホームページを解説しました.html"><img src="../image/ホームページ開設!!.png" alt="ホームページ開設!!"></a>
+                <h3>ホームページを開設しました</h3>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img class="footer" src="../image/ヘッダー.png" alt="フッター">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1 class="site-map">サイトマップ</h1>
+                <div class="logo-2-container">
+                    <img class="logo-2" src="../image/syogi-logo.png" alt="埼玉県立川越高等学校囲碁将棋部 ロゴ">
+                </div>
+            </div>
+            <nav class="footer-menu-container">
+                <ul class="footer-menu">
+                    <li><a href="../html/index.html" class="index-html">ホーム</a></li>
+                    <li><a href="../html/news.html">活動報告</a></li>
+                    <li><a href="../html/tume-syogi.html">創作詰将棋</a></li>
+                    <li><a href="../html/about-club.html">部について</a></li>
+                    <li><a href="../html/contact.html">お問い合わせ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+    <script src="../script.js"></script>
 </body>
 </html>
