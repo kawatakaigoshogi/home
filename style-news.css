@@ -1,0 +1,234 @@
+body{
+    margin:0;
+    padding:0;
+    font-family:serif;
+    font-weight:bold;
+}
+header{
+    position:relative;
+    width:100%;
+    height:80px;
+    border-bottom:3px black solid;
+}
+.header{
+    position:absolute;
+    width:70%;
+    height:100%;
+    left:30%;
+}
+.logo-container{
+    width:30%;
+    height:100%;
+    position:absolute;
+    right:70%;
+    overflow:hidden;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+}
+.logo{
+    width:80%;
+    height:auto;
+    object-fit:cover;
+}
+.menu-container{
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+    position:absolute;
+    width:70%;
+    height:100%;
+    left:30%;
+}
+.menu-bar{
+    list-style:none;
+    margin:0;
+    padding:0;
+    display:flex;
+    justify-content:center;
+}
+.menu-bar li{
+    margin:0 15px;
+}
+.menu-bar li a{
+    color:black;
+    text-decoration:none;
+    padding:5px 10px;
+    display:block;
+    transition:0.3s ease;
+    border-radius:10px;
+}
+.menu-bar li a:hover{
+    background-color:ivory;
+}
+.news-html{
+    background-color:black;
+    color:ivory !important;
+}
+.news-html:hover{
+    background-color:black !important;
+}
+.main-text{
+    width:100%;
+    height:1000px;
+    background-color:ivory;
+}
+.news-container{
+    width:20%;
+    height:10%;
+    margin:30px auto;
+    position:relative;
+    overflow:hidden;
+}
+.news-container img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    object-fit:cover;
+}
+.news-topic{
+    width:70%;
+    height:auto;
+    margin:30px auto;
+    display:flex;
+    align-items:center;
+}
+.news-topic img{
+    width:40%;
+    height:auto;
+    border:5px rgb(255, 187, 0) solid;
+    border-radius:10px;
+}
+.text-box{
+    width:60%;
+    height:100%;
+    margin:0 30px;
+    display:flex;
+    flex-direction:column;
+}
+.text-box a{
+    text-decoration:none;
+    color:black;
+}
+.text-box h2{
+    margin:10px;
+    width:fit-content;
+    border-bottom:5px rgb(255, 187, 0) solid;
+    padding:5px;
+}
+.text-box h4{
+    margin:10px;
+}
+.text-box h3{
+    width:fit-content;
+    padding:5px;
+    border-radius:10px;
+    background-color:rgb(255, 187, 0);
+    color:black;
+    font-weight:bold;
+}
+.show-more-container{
+    width:20%;
+    height:20%;
+    margin:0 auto;
+    position:relative;
+    overflow:hidden;
+}
+.show-more-container img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    object-fit:cover;
+}
+footer{
+    position:relative;
+    width:100%;
+    height:300px;
+    border-top:3px black solid;
+}
+.footer{
+    width:70%;
+    height:100%;
+    position:absolute;
+    z-index:1;
+    left:30%;
+}
+.footer-container{
+    position:absolute;
+    z-index:2;
+    width:100%;
+    height:100%;
+    display:flex;
+}
+.footer-logo{
+    margin:0;
+    padding:0;
+    width:30%;
+    height:100%;
+    position:relative;
+}
+.logo-2-container{
+    margin:0;
+    padding:0;
+    position:absolute;
+    width:80%;
+    height:30%;
+    overflow:hidden;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.logo-2{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.site-map{
+    margin-top:5%;
+    margin-bottom:0;
+    margin-left:0;
+    margin-right:0;
+    padding:5px 15px;
+    position:absolute;
+    left:50%;
+    transform:translateX(-50%);
+    width:fit-content;
+    white-space:nowrap;
+    color:black;
+    border:3px rgb(255, 187, 0) solid;
+    border-radius:10px;
+}
+.footer-menu-container{
+    margin:0;
+    padding:0;
+    width:70%;
+    height:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+.footer-menu{
+    margin:0;
+    padding:0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    list-style-type:disc;
+}
+.footer-menu li{
+    margin:0 25px;
+}
+.footer-menu li a{
+    text-decoration:none;
+    color:black;
+    padding:5px 10px;
+    display:block;
+    transition:0.3s ease;
+    border-radius:10px;
+}
+.footer-menu li a:hover{
+    background-color:ivory;
+}
