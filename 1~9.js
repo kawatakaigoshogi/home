@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const fileName = imageSrc.substring(imageSrc.lastIndexOf('/') + 1);
 
             // ファイル名から回答の画像と手順を生成
-            const solutionImageSrc = `../../image/詰将棋/解答/${fileName}`;
+            const solutionImageSrc = `${fileName}`;
             const solutionText = getSolutionText(fileName); // 適切な回答手順を返す関数
 
             // 回答内容をウィンドウに挿入
