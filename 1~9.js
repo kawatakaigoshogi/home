@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function getSolutionText(fileName) {
         switch (fileName) {
-            case '7手詰め―1.png':
+            case '7-1.png':
                 return '手順：<br>1. ☗3一飛成 ☖6二玉<br>2. ☗7一銀打 ☖同金<br>3. ☗4二龍 ☖6一玉<br>4. ☗5二龍';
             case '7手詰めー2.png':
                 return '手順：<br>1. ☗4二角成 ☖同玉<br>2. ☗4一金 ☖同玉<br>3. ☗4二飛 ☖同玉<br>4. ☗3二金 ☖同玉<br>5. ☗3一角';
