@@ -122,6 +122,8 @@ header{
     padding:10px;
 }
 #answerWindow{
+    width:100%;
+    height:100%;
     display: none; 
     position: fixed; 
     z-index: 9999; 
@@ -134,10 +136,17 @@ header{
     align-items:center;
 }
 .1234{
-    background:#fff; 
+    width:80%;
+    height:600px;
+    background-color:ivory; 
     padding:20px; 
+    border:5px black solid;
     border-radius:10px; 
     position:relative;
+    display:flex;
+    fledx-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 .close-button{
     position:absolute;
