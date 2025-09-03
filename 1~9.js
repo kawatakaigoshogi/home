@@ -1,55 +1,51 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // 全ての「回答を見る」ボタンを取得
+    // 「回答を見る」ボタン(h2)を全て取得
     const answerButtons = document.querySelectorAll('.check-answer');
-    // 回答ウィンドウと閉じるボタンを取得
+    // モーダルウィンドウや閉じるボタン、詳細欄を取得
     const answerWindow = document.getElementById('answerWindow');
     const closeButton = document.querySelector('.close-button');
     const answerDetails = document.getElementById('answerDetails');
 
-    // 回答ボタンごとにイベントリスナーを設定
+    // ボタンごとにイベントリスナー
     answerButtons.forEach(button => {
         button.addEventListener('click', (event) => {
-            // クリックされたボタンの親要素のコンテナを取得
+            // クリックしたh2の親.containerを取得
             const container = event.target.closest('.container');
-            // コンテナ内の詰将棋画像を取得
+            // container内のimg要素を取得
             const imageElement = container.querySelector('img');
-            // 画像のソースURLからファイル名を取得
-            const imageSrc = imageElement.src;
+            // ファイル名だけ取得
+            const imageSrc = imageElement.getAttribute('src');
             const fileName = imageSrc.substring(imageSrc.lastIndexOf('/') + 1);
 
-            // ファイル名から回答の画像と手順を生成
-            const solutionImageSrc = `${fileName}`;
-            const solutionText = getSolutionText(fileName); // 適切な回答手順を返す関数
+            // ファイル名から手順を取得
+            const solutionText = getSolutionText(fileName);
 
-            // 回答内容をウィンドウに挿入
+            // 詳細ウィンドウに内容をセット
             answerDetails.innerHTML = `
-                <img src="${solutionImageSrc}" alt="解答画像">
+                <img src="${fileName}" alt="解答画像">
                 <p>${solutionText}</p>
             `;
 
-            // 回答ウィンドウを表示
+            // モーダルを表示
             answerWindow.style.display = 'flex';
         });
     });
 
-    // 閉じるボタンにイベントリスナーを設定
+    // 閉じるボタン
     closeButton.addEventListener('click', () => {
         answerWindow.style.display = 'none';
-        answerDetails.innerHTML = ''; // 内容をクリア
+        answerDetails.innerHTML = '';
     });
 
-    // ウィンドウ外をクリックしても閉じるように設定
+    // ウィンドウ外クリックでも閉じる
     answerWindow.addEventListener('click', (event) => {
         if (event.target === answerWindow) {
             answerWindow.style.display = 'none';
-            answerDetails.innerHTML = ''; // 内容をクリア
+            answerDetails.innerHTML = '';
         }
     });
 
-    /**
-     * ファイル名に基づいて詰将棋の手順を返す関数
-     * ユーザーの詰将棋データに合わせて内容をカスタマイズしてください。
-     */
+    // ファイル名から手順
     function getSolutionText(fileName) {
         switch (fileName) {
             case '7-1.png':
