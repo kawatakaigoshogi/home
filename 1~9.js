@@ -15,8 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButton1.addEventListener('click', () => {
         answerContainer1.style.display = 'none';
     });
-});
-document.addEventListener('DOMContentLoaded', () => {
     const checkAnswerButton2 = document.querySelector('.check-answer-2');
     const closeButton2 = document.querySelector('.close-button-2');
     const answerContainer2 = document.querySelector('.answer-container-2');
@@ -33,8 +31,6 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButton2.addEventListener('click', () => {
         answerContainer2.style.display = 'none';
     });
-});
-document.addEventListener('DOMContentLoaded', () => {
     const checkAnswerButton3 = document.querySelector('.check-answer-3');
     const closeButton3 = document.querySelector('.close-button-3');
     const answerContainer3 = document.querySelector('.answer-container-3');
@@ -51,8 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     closeButton3.addEventListener('click', () => {
         answerContainer3.style.display = 'none';
     });
-});
-document.addEventListener('DOMContentLoaded', () => {
     const checkAnswerButton4 = document.querySelector('.check-answer-4');
     const closeButton4 = document.querySelector('.close-button-4');
     const answerContainer4 = document.querySelector('.answer-container-4');
