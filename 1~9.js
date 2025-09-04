@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const answerContainer1 = document.querySelector('.answer-container-1');
 
     // ページ読み込み時に回答コンテナを非表示にする
-    answerContainer1.style.display = 'none';
+
 
     // 回答を見るボタンをクリックしたときの処理
     checkAnswerButton1.addEventListener('click', () => {
@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const answerContainer2 = document.querySelector('.answer-container-2');
 
     // ページ読み込み時に回答コンテナを非表示にする
-    answerContainer2.style.display = 'none';
 
     // 回答を見るボタンをクリックしたときの処理
     checkAnswerButton2.addEventListener('click', () => {
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const answerContainer3 = document.querySelector('.answer-container-3');
 
     // ページ読み込み時に回答コンテナを非表示にする
-    answerContainer3.style.display = 'none';
+
 
     // 回答を見るボタンをクリックしたときの処理
     checkAnswerButton3.addEventListener('click', () => {
@@ -52,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const answerContainer4 = document.querySelector('.answer-container-4');
 
     // ページ読み込み時に回答コンテナを非表示にする
-    answerContainer4.style.display = 'none';
+
 
     // 回答を見るボタンをクリックしたときの処理
     checkAnswerButton4.addEventListener('click', () => {
