@@ -223,12 +223,15 @@ footer{
 }
 .answer-window-1{
     width:80%;
-    height:600px;
+    height:300px;
     background-color:ivory;
     border:5px black solid;
     border-radius:10px;
     display:flex;
     flex-direction:column;
+}
+.answerDetails-1{
+    text-align:center;
 }
 .close-button-1{
     width:80px;
