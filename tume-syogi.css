@@ -217,3 +217,68 @@ footer{
 .footer-menu li a:hover{
     background-color:ivory;
 }
+@media (max-width: 600px) {
+    header, .header, .footer, .footer-menu-container {
+        width: 100%;
+        left: 0;
+        position: static;
+    }
+    .logo-container, .footer-logo {
+        width: 60px;
+        height: 60px;
+        position: static;
+    }
+    .logo, .logo-2 {
+        width: 100%;
+        height: auto;
+    }
+    .menu-container, .footer-menu-container {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .menu-bar, .footer-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+    .menu-bar li, .footer-menu li {
+        margin: 10px 0;
+    }
+    .main-text, .tume-syogi-container, .title-container {
+        width: 100%;
+        margin: 10px 0;
+        height: auto;
+    }
+    .tume-syogi-container {
+        flex-direction: column;
+        height: auto;
+        margin: 10px 0;
+    }
+    .tume-syogi-container a {
+        width: 80%;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    .tyuui-jikou {
+        height: auto;
+        padding: 10px;
+    }
+    .tyuui-jikou h2, .tyuui-jikou h4 {
+        width: 100%;
+        margin-left: 0;
+    }
+    footer {
+        height: auto;
+        padding: 10px 0;
+    }
+    .footer-menu {
+        flex-direction: column;
+    }
+    .site-map {
+        position: static;
+        transform: none;
+        margin: 10px auto;
+        width: 95%;
+    }
+}
