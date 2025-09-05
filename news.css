@@ -218,6 +218,7 @@ footer{
 }
 .footer-menu li a:hover{
     background-color:ivory;
+}
 @media (max-width: 600px) {
   header, footer, .main-text, .news-container, .news-topic, .footer-container {
     width: 100%;
@@ -362,4 +363,4 @@ footer{
     left: auto;
   }
 }
-}
+
