@@ -218,3 +218,375 @@ footer{
 .footer-menu li a:hover{
     background-color:ivory;
 }
+/* --- モバイルファーストの基本スタイル (768px以下の画面に適用) --- */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+/* ヘッダー */
+header {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 3px black solid;
+}
+.header {
+    display: none;
+}
+.back-to-the-top {
+    position: static;
+    width: auto;
+    height: 100%;
+}
+.logo-container {
+    height: 80%;
+    position: static;
+}
+.logo {
+    width: auto;
+    height: 100%;
+}
+.menu-container {
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 70%;
+    height: calc(100vh - 60px);
+    background-color: white;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+    display: block;
+}
+.menu-container.open {
+    right: 0;
+}
+.menu-bar {
+    list-style: none;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    margin: 0;
+}
+.menu-bar li {
+    margin: 15px 0;
+}
+.menu-bar li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+.menu-bar li a:hover {
+    background-color: ivory;
+}
+.contact-html {
+    background-color: black;
+    color: ivory !important;
+}
+.contact-html:hover {
+    background-color: black !important;
+}
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    z-index: 1001;
+}
+.hamburger-menu .bar {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+}
+.hamburger-menu.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger-menu.open .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger-menu.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* メインコンテンツ */
+.main-text {
+    width: 100%;
+    height: auto;
+    min-height: calc(100vh - 60px - 300px); /* ヘッダーとフッターの高さを引く */
+    background-color: ivory;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 0;
+}
+.sub-text {
+    text-align: center;
+    width: 90%;
+    height: auto;
+    padding: 20px 0;
+}
+.sub-text h1, .sub-text h2 {
+    font-size: 1.2em;
+}
+.sub-text h2 {
+    word-break: break-all;
+}
+.sub-text2 {
+    width: 100%;
+    height: auto;
+    padding: 20px 0;
+}
+.h1-box {
+    width: 90%;
+    height: auto;
+    padding: 10px;
+    border: 5px rgb(255,187,0) solid;
+}
+.sub-text2 h1 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+.sub-text3 {
+    width: 100%;
+    text-align: left;
+}
+.sub-text3 h3 {
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+/* フッター */
+footer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-top: 3px black solid;
+    padding: 20px 0;
+}
+.footer {
+    display: none;
+}
+.footer-container {
+    flex-direction: column;
+    align-items: center;
+    position: static;
+    text-align: center;
+}
+.footer-logo {
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+.logo-2-container {
+    position: static;
+    transform: none;
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+}
+.site-map {
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+}
+.footer-menu-container {
+    width: 100%;
+}
+.footer-menu {
+    flex-direction: column;
+    list-style-type: none;
+}
+.footer-menu li {
+    margin: 10px 0;
+}
+.footer-menu li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    display: block;
+    transition: 0.3s ease;
+    border-radius: 10px;
+}
+.footer-menu li a:hover {
+    background-color: ivory;
+}
+
+/* --- PC・タブレット対応用 (769px以上の画面に適用) --- */
+@media screen and (min-width: 769px) {
+    /* ヘッダー */
+    header {
+        height: 80px;
+        display: block;
+        padding: 0;
+    }
+    .header {
+        display: block;
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        left: 30%;
+    }
+    .back-to-the-top {
+        position: absolute;
+        width: 30%;
+        height: 100%;
+        right: 70%;
+    }
+    .logo-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {
+        width: 80%;
+        height: auto;
+        object-fit: cover;
+    }
+    .menu-container {
+        position: absolute;
+        width: 70%;
+        height: 100%;
+        left: 30%;
+        right: auto;
+        top: auto;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    .menu-bar {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+    .menu-bar li {
+        margin: 0 15px;
+    }
+    .menu-bar li a {
+        padding: 5px 10px;
+    }
+    .hamburger-menu {
+        display: none;
+    }
+
+    /* メインコンテンツ */
+    .main-text {
+        height: 800px;
+        padding: 0;
+    }
+    .sub-text {
+        width: 100%;
+        height: 40%;
+        padding: 0;
+    }
+    .sub-text h1, .sub-text h2 {
+        font-size: 1.5em;
+    }
+    .sub-text h2 {
+        word-break: normal;
+    }
+    .sub-text2 {
+        width: 100%;
+        height: 60%;
+        padding: 0;
+    }
+    .h1-box {
+        width: 70%;
+        height: 70%;
+        padding: 20px;
+        border: 10px rgb(255,187,0) solid;
+    }
+    .sub-text2 h1 {
+        height: 30%;
+    }
+    .sub-text3 {
+        width: 90%;
+        height: 70%;
+        text-align: left;
+    }
+    .sub-text3 h3 {
+        margin: 0;
+    }
+
+    /* フッター */
+    footer {
+        height: 300px;
+        padding: 0;
+    }
+    .footer {
+        display: block;
+        width: 70%;
+        height: 100%;
+        position: absolute;
+        z-index: 1;
+        left: 30%;
+    }
+    .footer-container {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        display: flex;
+    }
+    .footer-logo {
+        width: 30%;
+        height: 100%;
+    }
+    .logo-2-container {
+        position: absolute;
+        width: 80%;
+        height: 30%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .site-map {
+        margin-top: 5%;
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 5px 15px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: fit-content;
+        white-space: nowrap;
+        color: black;
+        border: 3px rgb(255, 187, 0) solid;
+        border-radius: 10px;
+    }
+    .footer-menu-container {
+        width: 70%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-menu {
+        display: flex;
+        list-style-type: disc;
+    }
+    .footer-menu li {
+        margin: 0 25px;
+    }
+    .footer-menu li a {
+        padding: 5px 10px;
+    }
+}
