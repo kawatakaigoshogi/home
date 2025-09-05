@@ -294,6 +294,7 @@
             display: block;
             transition: 0.3s ease;
             border-radius: 10px;
+            text-align: left;
         }
 
         .footer-menu li a:hover {
