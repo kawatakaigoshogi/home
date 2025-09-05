@@ -1,0 +1,45 @@
+/* スマホ用CSS: メディアクエリで切り替え */
+@media (max-width: 768px) {
+
+    /*--- TOP -----*/
+
+    /* メインエリアの高さ縮小　*/
+    .main-text {
+        height: auto;
+        padding: 30px 0
+    }
+
+    .prev-button,
+    .next-button {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: rgb(0, 0, 0);
+        color: ivory;
+        border: none;
+        padding: 6px;
+        cursor: pointer;
+    }
+
+    /* メインエリア-サブ2　*/
+    .sub-text2 {
+        border-top: 20px black solid;
+        border-radius: 20px;
+        width: 80%;
+        height: 20%;
+        text-align: center;
+        margin: 30px auto;
+    }
+
+    .sub-text2 h1 {
+        font-size: 1.4rem;
+    }
+
+    .news-1 {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+        overflow: visible;
+    }
+}

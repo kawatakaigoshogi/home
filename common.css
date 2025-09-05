@@ -1,0 +1,317 @@
+    /* PC用CSS: デフォルトのスタイル */
+
+    .logo {
+        width: 70%;
+        height: auto;
+        max-height: 80px;
+        object-fit: cover;
+    }
+
+    .menu-bar {
+        display: flex;
+        /* PCではメニューを横並びにする */
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        justify-content: space-around;
+    }
+
+    .menu-bar li a {
+        padding: 15px;
+        display: block;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .res-on {
+        display: none
+    }
+
+    .res-off {
+        display: block
+    }
+
+    @media (max-width: 768px) {
+        .res-on {
+            display: block
+        }
+
+        .res-off {
+            display: none
+        }
+    }
+
+    /* スマホ用CSS: メディアクエリで切り替え */
+    @media (max-width: 768px) {
+        body {
+            width: 100%;
+        }
+
+        .hamburger-menu {
+            display: block;
+            /* スマホではハンバーガーアイコンを表示 */
+            cursor: pointer;
+            padding: 10px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            z-index: 20;
+        }
+
+        .hamburger-menu .bar {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: #333;
+            margin: 5px 0;
+            transition: 0.4s;
+        }
+
+        .menu-bar {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            /* 初期状態で画面外に隠す */
+            width: 70%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: left 0.5s ease;
+            z-index: 10;
+        }
+
+        /* .menu-containerに.openクラスが付くとメニューを表示 */
+        .menu-container.open .menu-bar {
+            left: 0;
+        }
+
+        .menu-container.open .menu-bar li {
+            width: 60%;
+        }
+
+
+        /* ハンバーガーアイコンをバツ印に */
+        .menu-container.open .hamburger-menu .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-container.open .hamburger-menu .bar:first-child {
+            transform: translateY(8px) rotate(45deg);
+        }
+
+        .menu-container.open .hamburger-menu .bar:last-child {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* スマホ時のロゴ */
+        .back-to-the-top {
+            position: absolute;
+            width: 50%;
+            height: 100%;
+            right: 55%;
+        }
+
+
+
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: serif;
+            font-weight: bold;
+        }
+
+        header {
+            position: relative;
+            width: 100%;
+            height: 80px;
+            border-bottom: 3px black solid;
+        }
+
+        .header {
+            position: absolute;
+            width: 70%;
+            height: 100%;
+            left: 30%;
+        }
+
+        .back-to-the-top {
+            position: absolute;
+            width: 30%;
+            height: 100%;
+            right: 70%;
+        }
+
+        .logo-container {
+            width: 120%;
+            height: 100%;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .menu-container {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            position: absolute;
+            width: 70%;
+            height: 100%;
+            left: 30%;
+        }
+
+        .menu-bar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu-bar li {
+            margin: 0 15px;
+            text-align: center;
+        }
+
+        .menu-bar li a {
+            color: black;
+            text-decoration: none;
+            padding: 5px 10px;
+            display: block;
+            transition: 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .menu-bar li a:hover {
+            background-color: ivory;
+        }
+
+        /*------------------*/
+        footer {
+            position: relative;
+            padding: 0;
+            width: 100%;
+            height: 300px;
+            border-top: 3px black solid;
+        }
+
+        .footer {
+            width: 70%;
+            height: 100%;
+            position: absolute;
+            z-index: 1;
+            left: 30%;
+        }
+
+        .footer-container {
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            display: flex;
+        }
+
+        .footer-logo {
+            margin: 0;
+            padding: 0;
+            width: 30%;
+            height: 100%;
+            position: relative;
+        }
+
+        .logo-2-container {
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            width: 80%;
+            height: 30%;
+            overflow: hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .logo-2 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .site-map {
+            margin-top: 5%;
+            margin-bottom: 0;
+            margin-left: 0;
+            margin-right: 0;
+            padding: 5px 15px;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: fit-content;
+            white-space: nowrap;
+            color: black;
+            border: 3px rgb(255, 187, 0) solid;
+            border-radius: 10px;
+        }
+
+        .footer-menu-container {
+            margin: 0;
+            padding: 0;
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .footer-menu {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            list-style-type: disc;
+        }
+
+        .footer-menu li {
+            margin: 0 25px;
+        }
+
+        .footer-menu li a {
+            text-decoration: none;
+            color: black;
+            padding: 5px 10px;
+            display: block;
+            transition: 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .footer-menu li a:hover {
+            background-color: ivory;
+        }
+
+        /* フッタ-エリアの調整　*/
+        .footer-logo {
+            width: 50%;
+        }
+
+        .site-map {
+            top: 0%;
+            left: 60%;
+            font-size: 1.3rem
+        }
+
+        .footer-menu {
+            display: block
+        }
+    }
