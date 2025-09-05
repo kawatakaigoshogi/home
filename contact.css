@@ -66,8 +66,8 @@ header{
     background-color:ivory;
 }
 .contact-html{
-    background-color:black;
     color:ivory !important;
+    background-color:black;
 }
 .contact-html:hover{
     background-color:black !important;
