@@ -278,17 +278,20 @@ footer {
 
     .tyuui-jikou {
         height: auto;
-        padding: 10px;
     }
 
     .tyuui-jikou h2,
     .tyuui-jikou h4 {
-        width: 94%;
-        margin-left: 0;
+        width: 90%;
+        margin: 30px auto;
     }
 
     .tyuui-jikou h4 {
         line-height: 2.4rem;
         font-feature-settings: "palt";
+    }
+
+    .tyuui-jikou a {
+        font-size: .9rem;
     }
 }
