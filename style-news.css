@@ -218,4 +218,148 @@ footer{
 }
 .footer-menu li a:hover{
     background-color:ivory;
+@media (max-width: 600px) {
+  header, footer, .main-text, .news-container, .news-topic, .footer-container {
+    width: 100%;
+    max-width: 100vw;
+    box-sizing: border-box;
+    padding: 0 8px;
+    min-width: 0;
+  }
+
+  header {
+    height: auto;
+    min-height: 60px;
+    padding-bottom: 10px;
+  }
+
+  .header, .footer {
+    width: 100%;
+    height: auto;
+    position: static;
+    left: 0;
+  }
+
+  .logo-container, .footer-logo {
+    width: 100%;
+    position: static;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 8px;
+    display: flex;
+  }
+  .logo, .logo-2 {
+    width: 50vw;
+    max-width: 160px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .menu-container, .footer-menu-container {
+    width: 100%;
+    position: static;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8px;
+    display: flex;
+  }
+
+  .menu-bar, .footer-menu {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+  }
+  .menu-bar li, .footer-menu li {
+    margin: 0;
+    width: 100%;
+  }
+  .menu-bar li a, .footer-menu li a {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .main-text {
+    height: auto;
+    padding: 16px 0;
+  }
+
+  .news-container {
+    width: 80%;
+    height: auto;
+    margin: 16px auto;
+  }
+  .news-container img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .news-topic {
+    width: 100%;
+    flex-direction: column;
+    margin: 16px auto;
+    align-items: center;
+    text-align: center;
+  }
+  .news-topic img {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto 12px;
+  }
+  .text-box {
+    width: 100%;
+    margin: 0;
+    align-items: center;
+  }
+  .text-box h2,
+  .text-box h4,
+  .text-box h3 {
+    font-size: 1em;
+    margin: 6px auto;
+    text-align: center;
+    width: 100%;
+    padding: 5px 0;
+  }
+
+  .show-more-container {
+    width: 80%;
+    margin: 16px auto;
+    height: auto;
+  }
+  .show-more-container img {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    height: auto;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  .site-map {
+    position: static;
+    transform: none;
+    margin: 8px auto;
+    width: 100%;
+    font-size: 1.1em;
+    text-align: center;
+  }
+  .logo-2-container {
+    position: static;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 8px;
+    transform: none;
+    top: auto;
+    left: auto;
+  }
+}
 }
