@@ -209,6 +209,7 @@ header {
     height: 20%;
     text-align: center;
     margin: 0 auto;
+    border-bottom: 30px black double;
 }
 
 .sub-text-b {
